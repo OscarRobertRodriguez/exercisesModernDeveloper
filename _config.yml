@@ -16,7 +16,7 @@ url: "http://webjeda.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
-baseurl: "/articleModernDeveloper"
+baseurl: "/articlesModernDeveloper"
 
 permalink: /:title/
 
