@@ -41,19 +41,32 @@ Here is a live demonstration of the select tag. Notice the cat option has the `s
 <br>
 
 
-| Browser   |    Support   | 
-|----------|:-------------:|
-| Chrome | yes| 
-| FireFox | yes|  
-| Explorer |yes|  
-| Safari | yes|
-| Opera  | yes|
-{: .table .table-striped .table-hover}
+
+
+
+<table class="table table-striped">
+
+  <tbody>
+    <tr>
+      <th scope="row">Browser</th>
+      <td>Chrome</td>
+      <td>Firefox</td>
+      <td>Explorer</td>
+      <td>Safari</td>
+      <td>Opera</td>
+      </tr>
+    <tr>
+      <th scope="row">Support</th>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+  </tbody>
+</table>
 
 <br>
 
 
 
-<br>
-<br>
-<br>
