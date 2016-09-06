@@ -97,7 +97,7 @@ document.write(mySubString);  // will print "va" to document
 
 var myString = "JavaScript";
 var mySubString = myString.slice(-1);
-document.write(mySubString);  // will print "t" to document
+document.write(mySubString);  // will print "t" to document -1 gets the last character
 
 ```
 
