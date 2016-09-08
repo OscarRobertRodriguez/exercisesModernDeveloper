@@ -9,12 +9,12 @@ categories: jekyll update
 Describe how equality comparisons in JavaScript works using `==` and `===` and describe the difference between these operators..
 <hr>
 
-### Define:
-
 Comparison operators are used by Javascript to evaluate conditions with the result being a Boolean: true or false. Other operators do exist but this article will focus on equality comparisons. 
 
+
+## Is equal to
  
-`==`(is equal to) compares two values together to see if they are the same. Values being numbers, strings, or Booleans. Getting the wrong comparison is likely to happen with `==` because it can't distinguish between data type, so it's best to use the strict equal to operator. Conversion takes place thats why '3' `==` 3 can be true, the 3 converts to a string. 
+`==` compares two values together to see if they are the same. Values being numbers, strings, or Booleans. Getting the wrong comparison is likely to happen with `==` because it can't distinguish between data type, so it's best to use the strict equal to operator. Conversion takes place thats why '3' `==` 3 can be true, the 3 converts to a string. 
 
 ```javascript
 'Goodbye' == 'bye' // will return false not same string
@@ -23,7 +23,9 @@ Comparison operators are used by Javascript to evaluate conditions with the resu
 '3' == 3 // returns true reason to avoid this operator 
 ```
 
-`===`(strict equal operator) on the other hand compares not only the value but the data type also which prevents the mishaps that `==` has. Conversion doesn't take place, a 3 stays a number and so on. Use this operator 99% of the time in your code.
+## Strict equal to
+
+`===` on the other hand compares not only the value but the data type also which prevents the mishaps that `==` has. Conversion doesn't take place, a 3 stays a number and so on. Use this operator 99% of the time in your code.
 
 ```javascript
 "3" === 3 // returns false  because although same value not the same data type
