@@ -234,3 +234,82 @@ var last = Ul.lastChild.previousSibling;
 var li_1 =  first.innerHTML;
 var li_2 = last.innerHTML;
 ```
+<br>
+
+## **Exercises 7**
+
+<a href="https://jsbin.com/yumowu/edit?html,js,output" class="btn btn-link" target="_blank" style="font-size:16px">Jsbin for this section</a><br>
+
+**1.** Which method will you use to return the element with id="navBar"? Specify the appropriate syntax.
+
+<span class="label label-warning">Answer:</span><br>
+
+*There is a typo in the code it's suppose to be id="navBar".*
+
+```javascript
+var Ul = document.querySelector(".navBar");
+```
+**2.** Which method will you use to return all the elements with class=”Info”? Provide the command to return the desired values.
+
+<span class="label label-warning">Answer:</span><br>
+
+```javascript
+var allInfoClasses = document.querySelectorAll(".Info");
+```
+**3.** Use the querySelectorAll method to return all the li items under the ul node. Write the appropriate loop to modify the text to have a red font color and underlining.
+
+<span class="label label-warning">Answer:</span><br>
+
+```javascript
+ var allListItems = document.querySelectorAll("#navBar li");
+
+  for(var i = 0; i < allListItems.length; i++) {
+     allListItems[i].style.color = "red";
+     allListItems[i].style.textDecoration = "underline";
+```
+
+**4.** What is wrong with the following line of code with respect to the HTML markup provided for this exercise?
+var elementSelected = document.querySelector(“.topNavigation”);
+Justify your response with proper reasoning.
+
+<span class="label label-warning">Answer:</span><br>
+
+This code returns `null` because the class `topNavigation` does not exist within the document. Checkout the Jsbin to verify this.
+
+```javascript
+  var nothing = document.querySelector(".topNavigation");
+```
+
+<br>
+
+## **Exercises 8**
+
+<a href="https://jsbin.com/ximagig/edit?html,js,output" class="btn btn-link" target="_blank" style="font-size:16px">Jsbin for this section</a><br>
+
+
+**1.** Write a JavaScript statement to return the first item in the list (Online Banking) using the `querySelector()` method.
+
+<span class="label label-warning">Answer:</span><br>
+
+```javascript
+var firstLi = document.querySelector('#ob');
+```
+**2.** Use the `querySelectorAll()`` method to retrieve the count of the number of items in the list. (Hint: Use CSS selectors and the length property)
+
+<span class="label label-warning">Answer:</span><br>
+
+```javascript
+var allLi = document.querySelectorAll('.navBar li');
+var lengthLi = allLi.length;
+```
+**3.** Write a statement to retrieve the HTML markup within the fourth list item, i.e. the item with `id=”cc”`.
+
+<span class="label label-warning">Answer:</span><br>
+
+```javascript
+var fourthLi = document.querySelector('#cc');
+output_before = fourthLi.innerHTML;
+```
+
+<br>
+<br>
