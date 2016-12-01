@@ -157,162 +157,27 @@ N/A since can't show this
 
 ## **Exercises 5**
 
-<a href="https://jsbin.com/neqiwis/edit?html,js,output" class="btn btn-link" target="_blank" style="font-size:16px">Jsbin for this section</a><br>
-**1.** Use the appropriate property on the nodeNavList object to return the first child under it. After obtaining the child node, use the appendChild property to append the text node “Online Banking” to it.
+
+**1.If you haven’t already done so, install EditThisCookie and try tweaking the cookies on some of your favorite sites, see what you can change.**
 
 <span class="label label-warning">Answer:</span><br>
 
-```javascript
-var li_node = nodeNavBarList.firstChild;
-  var text_node = document.createTextNode("Online Banking");
-
-  li_node.appendChild(text_node);
-
-  document.getElementsByClassName("navBar").appendChild(li_node);
-```
-**2.** Use the appropriate sibling properties to traverse to the second list element (Mobile Banking) and delete this node using the removeChild property.
-
-<span class="label label-warning">Answer:</span><br>
-
-```javascript
-  var mobile = document.getElementById("mb");
-
-  nodeNavBarList.removeChild(mobile);
-```
-
-**3.** Use the nodeNavBarDiv object to get the value of its id attribute.
-
-<span class="label label-warning">Answer:</span><br>
-
-```javascript
-  var parent = nodeNavBarDiv;
-  var attr = parent.getAttribute('id');
-  document.getElementById("domValues").innerHTML = "this is the id for topNavBarDiv: " + attr;
-```
-
-**4.** Use the node properties on the nodeNavList object. Return the last list item under the ul element. Use the setAttribute property to set id=”al” on the obtained node.
-
-<span class="label label-warning">Answer:</span><br>
-
-```javascript
-var parent = nodeNavBarList.lastChild;
-parent.setAttribute("id", "al");
-document.getElementById("domValues").innerHTML = "this is the new id for the last li element: " + parent.id;
-```
-<br>
-
-## **Exercises 6**
-
-<a href="https://jsbin.com/tijici/edit?html,js,output" class="btn btn-link" target="_blank" style="font-size:16px">Jsbin for this section</a><br>
-
-**1.** Use the setAttribute method to change the value of the identity attribute (id) from navBar to bankingTopNavigation.
-
-<span class="label label-warning">Answer:</span><br>
-
-```javascript
-  var parent = document.getElementById("navBar");
-  parent.setAttribute('id','bankingTopNavigation');
-```
-
-**2.** Create a new element of type li. Create a new text node with the contents “ACH/Wire Transfer.” Append the text node to the newly created list node. Finally, append this updated list node to the unordered list using the appendChild method.
-
-<span class="label label-warning">Answer:</span><br>
-
-```javascript
-    var li_node = document.createElement('li');
-    var text_node = document.createTextNode('ACH/Wire Transfer.');
-    li_node.appendChild(text_node);
-    var Ul =  document.getElementById('navBar').firstChild.nextSibling;
-    Ul.appendChild(li_node);
-```
-**3.** Use the firstChild and the lastChild properties to get hold of the first and last li elements under the parent ul node. Display the contents between the anchor tags for both the children (Hint: nodeValue property).
-
-<span class="label label-warning">Answer:</span><br>
-
-```javascript
-var Ul =  document.getElementById('navBar').firstChild.nextSibling;
-var first = Ul.firstChild.nextSibling;
-var last = Ul.lastChild.previousSibling;
-
-var li_1 =  first.innerHTML;
-var li_2 = last.innerHTML;
-```
-<br>
-
-## **Exercises 7**
-
-<a href="https://jsbin.com/yumowu/edit?html,js,output" class="btn btn-link" target="_blank" style="font-size:16px">Jsbin for this section</a><br>
-
-**1.** Which method will you use to return the element with id="navBar"? Specify the appropriate syntax.
-
-<span class="label label-warning">Answer:</span><br>
-
-*There is a typo in the code it's suppose to be id="navBar".*
-
-```javascript
-var Ul = document.querySelector(".navBar");
-```
-**2.** Which method will you use to return all the elements with class=”Info”? Provide the command to return the desired values.
-
-<span class="label label-warning">Answer:</span><br>
-
-```javascript
-var allInfoClasses = document.querySelectorAll(".Info");
-```
-**3.** Use the querySelectorAll method to return all the li items under the ul node. Write the appropriate loop to modify the text to have a red font color and underlining.
-
-<span class="label label-warning">Answer:</span><br>
-
-```javascript
- var allListItems = document.querySelectorAll("#navBar li");
-
-  for(var i = 0; i < allListItems.length; i++) {
-     allListItems[i].style.color = "red";
-     allListItems[i].style.textDecoration = "underline";
-```
-
-**4.** What is wrong with the following line of code with respect to the HTML markup provided for this exercise?
-var elementSelected = document.querySelector(“.topNavigation”);
-Justify your response with proper reasoning.
-
-<span class="label label-warning">Answer:</span><br>
-
-This code returns `null` because the class `topNavigation` does not exist within the document. Checkout the Jsbin to verify this.
-
-```javascript
-  var nothing = document.querySelector(".topNavigation");
-```
+I change color of some text and height of a div.
 
 <br>
 
-## **Exercises 8**
-
-<a href="https://jsbin.com/ximagig/edit?html,js,output" class="btn btn-link" target="_blank" style="font-size:16px">Jsbin for this section</a><br>
-
-
-**1.** Write a JavaScript statement to return the first item in the list (Online Banking) using the `querySelector()` method.
+**2. Find a DevTools add-on that lets you review and improve the accessibility of your site, then install it and test it against Google and Facebook..**
 
 <span class="label label-warning">Answer:</span><br>
-
-```javascript
-var firstLi = document.querySelector('#ob');
-```
-**2.** Use the `querySelectorAll()`` method to retrieve the count of the number of items in the list. (Hint: Use CSS selectors and the length property)
-
-<span class="label label-warning">Answer:</span><br>
-
-```javascript
-var allLi = document.querySelectorAll('.navBar li');
-var lengthLi = allLi.length;
-```
-**3.** Write a statement to retrieve the HTML markup within the fourth list item, i.e. the item with `id=”cc”`.
-
-<span class="label label-warning">Answer:</span><br>
-
-```javascript
-var fourthLi = document.querySelector('#cc');
-output_before = fourthLi.innerHTML;
-```
-
+I installed performance-analyzer.
+I tested it on Google got 23 request with an average call of 40ms.
+On Facebook I got 25 request with an average call of 323ms with the slowest call being 828ms.
 <br>
+
+**3. If you use a modern frontend framework (Angular, React, etc), find an add-on that integrates with that framework and explore how it can improve your coding. If not, take this opportunity to test out the AngularJS Batarang add-on on the AngularJS main site.**
+
+<span class="label label-warning">Answer:</span><br>
+I tried using this addon but it appears to have got stuck or doesn't work correctly.
 <br>
+
+
