@@ -59,14 +59,43 @@ I attempted this exercise but could not get the results that where asked for. An
 
 This is an image of me changing the console.log to "Not a number anymore!".
 
-<img style="display:block; margin: 0 auto; width: 900px; height:60px" src="../images/chromeDev2_1.png">  
+<img style="display:block; margin: 0 auto; width: 1000px; height:60px" src="../images/chromeDev2_1.png">  
 
 **2. Using the code-execution-bug.html, track the code execution via DevTools and identify why the out array only has four elements instead of eight; then, correct the code to fix it.**
 
 <span class="label label-warning">Answer:</span><br>
 
-Wasn't sure how to answer this question as I didn't know how to get to link left message on QA.
+<a href="https://jsbin.com/cagatoxiji/edit?html,js,console" class="btn btn-link" target="_blank" style="font-size:16px">Jsbin for this answer</a><br>
 
+This is the code for the execution bug :
+
+```javascript
+  var start = function () {
+    var data = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+      , remaining = ['i', 'j', 'k', 'l', 'm', 'n', 'o', 'p']
+      , out = [];
+    for (var i = 0; i < data.length; i++) {
+      var el = data.pop()
+        , r = remaining[i];
+        out.push(el + r);
+    }
+    done(out);
+  }
+  var done = function (result) {
+    console.info('Concatted to', result);
+  }
+```
+And in it's corrent start we get an output of only for items to the array instead of the expected eight as shown. 
+
+<img style="display:block; margin: 0 auto; width: 500px; height:60px" src="../images/Exercise2devToolsArray.png"> 
+
+The problem with the code is that when we pop off the the last item from the data array we are in effect substacting from the length of the array and because we use `data.length` this means we will never reach all eight items. 
+
+Now there are two ways we can solve this the first one not being ideal but a quick fix which is we replace `data.length` with the number 8. Now the reason this isn't ideal is because in the future our array may grow larger and we don't want to have to manually change this value all the time.
+
+The final and best way is to use `remaining.length` instead because this array will always be what it is since we are not using the pop method. Now that we made this change we get this.
+
+<img style="display:block; margin: 0 auto; width: 600px; height:60px" src="../images/Exercise2arrayCorrect.png"> 
 <br>
 
 ## **Exercises 3**
