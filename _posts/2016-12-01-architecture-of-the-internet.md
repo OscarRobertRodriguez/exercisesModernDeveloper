@@ -74,35 +74,55 @@ The application and transport layer are interconnected as they both need each ot
 ## **Exercises 3**
 
 
-**1. Using the Network panel, identify which JavaScript file took the longest to load.**
+**1.How many numbers can be represented using a total of 16 bits? How many unique devices might a subnet with a 16-bit IPv4 prefix support? What about a 20-bit IPv4 prefix?.**
 
 <span class="label label-warning">Answer:</span><br>
 
-The detector.js file takes the longest to load coming in at 10ms. 
+There can be a total of 65536 numbers represented by 16 bits which means there can also be 65536 unique devices supported by a 16-bit IPv4 prefix since an IPv4 supports up to 32 bits(32 - 16 = 16). 
 
-**2. Using the Network panel, identify which query parameter Google uses to send the “original query” when executing a new search for “modern web development testing.”**
+In a 20 bit IPv4 prefix there can be a total of 12 bits of unique devices (32 - 20 = 12). Which gets us 2^12 = 4096 unique devices on a 20 bit network. 
 
-<span class="label label-warning">Answer:</span><br>
-
-Not sure what this question is asking or what I'm looking for left a message on QA.
-
-
-**3. Use the timeline panel to profile how long it takes Google to load the search results page. From the summary, what category takes the longest? How long does Rendering take? What is the range of the JS Heap?**
+**2.Is the IP address 10.1.1.50 publicly accessible? How do you know?**
 
 <span class="label label-warning">Answer:</span><br>
 
-It takes browser about 1.82 seconds to load the search page using chrome browser. The longest category is the scripting coming in at 950.8ms and the rendering taking 94ms. The range of the JS Heap is 36MB to 65.5MB.
+The IP address 10.1.1.50 is a private ip address the reason I know this is because the RFC defines private networks as: 
+
+* 10.1.\*.\*
+* 172.16.\*.\*
+* 192.168.\*.\*
+* 127.\*.\*.\*
+* 169.254.\*.\*
+
+Since the ip address given follows under the first one we know that this is a privated in not public ip address. 
+
+
+**3. What is the smallest (numerically) theoretically possible IPv4 address? What is the largest?**
+
+<span class="label label-warning">Answer:</span><br>
+
+The smallest theoretically IPv4 address possible would have a subnet mask of 255.255.255.255 with an ip address of zero bits with 1 ip address allowed. The largest possible would have a subnet mask of 0.0.0.0 of 32 bits with 4.294967296 * 10^9 of possible ip address allowed on that network.
 
 <br>
 
 ## **Exercises 4**
 
 
-**1. If you haven’t done so already, set up your phone for remote debugging. If you use an iOS device, use the Safari tools if you have a Mac, or WeInRe if you’re on Windows.**
+**1. Try using Dig, a free online DNS query tool from Google to look up a few DNS records. Look up the A records for moderndeveloper.com, www.moderndeveloper.com, qa.moderndeveloper.com, and learn.moderndeveloper.com. What differences do you notice? Where do you find CNAME records in use and for what purposes?**
 
 <span class="label label-warning">Answer:</span><br>
 
 N/A since can't show this 
 
+**2. What are the name servers responsible for the .com top-level domain (TLD)? How about the .us TLD? What about the TLD associated with your home country? (Hint: Use Dig.)**
 
+<span class="label label-warning">Answer:</span><br>
+
+N/A since can't show this 
+
+**3.Are domain names case-sensitive? That is, do uppercase and/or lowercase letters matter in a domain name? What tools can you use to prove your answer and how?**
+
+<span class="label label-warning">Answer:</span><br>
+
+Domain names are case sensitive I can prove this by using the browser when you type say Google.com it gets traslated to google.com this is because all domain names need to be lowercase for the server to read then. This does not mean you can't type in uppercase letters for the domain though as the browser will change to lowercase. 
 <br>
