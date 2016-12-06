@@ -112,17 +112,108 @@ The smallest theoretically IPv4 address possible would have a subnet mask of 255
 
 <span class="label label-warning">Answer:</span><br>
 
-N/A since can't show this 
+Noticed that besides the moderndeveloper.com link and other similar link that the rest have different servers.
 
 **2. What are the name servers responsible for the .com top-level domain (TLD)? How about the .us TLD? What about the TLD associated with your home country? (Hint: Use Dig.)**
 
 <span class="label label-warning">Answer:</span><br>
 
-N/A since can't show this 
+.com address are for commercial orgaiztions, but unrestricted. The .us is for united states.
 
-**3.Are domain names case-sensitive? That is, do uppercase and/or lowercase letters matter in a domain name? What tools can you use to prove your answer and how?**
+## **Exercises 5**
+
+
+**1.DNS often uses UDP for query and response instead of TCP. Given what you now know about UDP vs. TCP, why do you think this is the case?**
 
 <span class="label label-warning">Answer:</span><br>
 
-Domain names are case sensitive I can prove this by using the browser when you type say Google.com it gets traslated to google.com this is because all domain names need to be lowercase for the server to read then. This does not mean you can't type in uppercase letters for the domain though as the browser will change to lowercase. 
+Because it's quicker than TCP. 
+
+**2. What is the purpose of TCP’s three-way handshake? Why do you believe that this handshake is “three-ways” and not only two (i.e. why the need for the SYN-ACK)?**
+
+<span class="label label-warning">Answer:</span><br>
+
+The purpose of the three-way handshake is to verify that a connection has been made to the device. The reason why we need three-way handshake is because we want to make sure that that the device can send but also receive data. Two way handshake wouldn't be as effective because we wouldn't know if we were sure that the device is sending to correct location.
+
+**3.How do you think that application-layer video-streaming protocols, such as RTP, make up for the occasional data loss that may happen with UDP?**
+
+<span class="label label-warning">Answer:</span><br>
+
+My guess is that that the video buffers for a sec or two till it recieves the missing data.
 <br>
+
+
+## **Exercises 6**
+
+
+**1. What HTTP status code would be received in an HTTP response when trying to access a protected resource on a server to which we don’t have access?**
+
+<span class="label label-warning">Answer:</span><br>
+
+403 Forbidden
+
+**2. Imagine a web page that includes a CSS stylesheet and 3 images. Using HTTP 1.1, how many total HTTP sessions are needed to request everything needed to render the web page? And how many total requests?**
+
+<span class="label label-warning">Answer:</span><br>
+
+There would only need to be one HTTP session as version 1.1 supports a persistent connection and there would need to be 4 request 1 for the stylesheet and 3 for the images. 
+
+**3.CRUD is a common computer programming acronym used to describe the four most common operations on a database record in persistent storage: create, read, update, and delete. Given what you know about HTTP’s methods, which HTTP method should you use for each of the four CRUD operations?**
+
+<span class="label label-warning">Answer:</span><br>
+
+* create = POST method
+* read = GET method
+* update = PUT method
+* delete = DELETE method 
+
+
+## **Exercises 7**
+
+
+**1. List the tokens and draw the DOM tree for the following HTML snippet:**
+
+```html
+<html>
+    <head>
+        <title>My Homepage</title>
+    </head>
+    <body>
+        <h1>About Me</h1>
+        <img src="my_photo.jpg"/>
+    </body>
+</html>
+```
+
+<span class="label label-warning">Answer:</span><br>
+
+Using the above snippet we can formulate the tokens as so :
+
+`<html>`,`<head>`,`<title>`,`My Homepage`,`</title>`,`</head>`,`<body>`,`<h1>`,`About Me`,`</h1>`,`<img src="my_photo.jpg"/>`,`</body>`,`</html>`. 
+
+Now that we have our token let's draw the DOM Tree for the tokens below.  
+
+<img style="display:block; margin: 0 auto; width: 600px; height: 500px" src="../images/tokenToDom.png">  
+
+
+
+**2. Try loading the following HTML in your browser. What happens? How is the following HTML malformed? How does your browser attempt to correct the malformations?**
+
+<span class="label label-warning">Answer:</span><br>
+
+This is the malformed code given in the exercise below:
+
+```html 
+<html>
+  <body>
+    </div>
+    <h1><p>My bad HTML</h1></p>
+    <br>
+  </body>
+  </br>
+</html>
+```
+<br>
+This is an Image of what Google Chrome browser returns with the malformed code. As can be seen what chrome does is it keeps the `<h1>My bad HTML</h1>` as the element that holds the text. It turns the paragraph into an empty tag and adds both line breaks after the paragraph finishing off with the div last. I'm sure in another browser we would get slightly different results. 
+
+<img style="display:block; margin: 0 auto; width: 600px; height: 500px" src="../images/malformed.png">  
