@@ -217,3 +217,21 @@ This is the malformed code given in the exercise below:
 This is an Image of what Google Chrome browser returns with the malformed code. As can be seen what chrome does is it keeps the `<h1>My bad HTML</h1>` as the element that holds the text. It turns the paragraph into an empty tag and adds both line breaks after the paragraph finishing off with the div last. I'm sure in another browser we would get slightly different results. 
 
 <img style="display:block; margin: 0 auto; width: 600px; height: 500px" src="../images/malformed.png">  
+
+
+## **Exercises 8**
+
+
+**1.Install Google Chrome on your computer (if you haven’t already) so that you can make use of Chrome’s advanced rendering debugging capabilities. Once installed and running, launch the Developer Tools (Press Ctrl + Shift + I or the F12 key on the keyboard). Click on the “Rendering” tab, then check the box labeled “Enable paint flashing.” Try browsing various websites with this box enabled. What do you notice? What operations or interactions might cause repainting on a page?**
+
+<span class="label label-warning">Answer:</span><br>
+
+I used the paint flashing on Youtube and I noticed it was activated when animations changed for example the images that show up when you put the cursor over the video time. So style changes or anything that changes on the page is considered a repaint from what I can tell. 
+
+
+**2. Consider a web page with a `<div>` element that has position: fixed placement in the upper right-hand corner of the page. All other elements on the page use normal layout (position: static). How would adjusting the size of the fixed-position `<div>` affect the rest of the page layout? How about adjusting the position of the `<div>`?**
+
+<span class="label label-warning">Answer:</span><br>
+
+From the test that I have run I have concluded that a div with a position of fixed won't have any affect, besides looking unpleasant, to the layout of elements with default of static, even if the position is adjusted. If I misinterperted the last part of this question, in that what the author meant was to change the postion to `static` etc. then it would affect the layout in different ways.  
+
