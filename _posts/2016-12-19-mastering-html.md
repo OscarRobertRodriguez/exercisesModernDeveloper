@@ -121,3 +121,27 @@ Use fieldset to group the first three input elements together and give it a capt
 <span class="label label-warning">Answer:</span> <br>
 
 
+<p data-height="265" data-theme-id="0" data-slug-hash="ZBPJWg" data-default-tab="result" data-user="nopity" data-embed-version="2" data-pen-title="form" class="codepen">See the Pen <a href="http://codepen.io/nopity/pen/ZBPJWg/">form</a> by oscar (<a href="http://codepen.io/nopity">@nopity</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+## **Exercises 3**
+
+**1.Creating a canvas image**
+
+Create a canvas of width 300 and height 300. Add an appropriate border to mark the canvas boundary.
+Create four squares that split the canvas into four equal parts, each having the dimensions of 150×150. Color fill the squares with blue, gray, maroon, and aqua in a clockwise manner starting from the top left square respectively.
+
+<span class="label label-warning">Answer:</span> <br>
+
+<p data-height="366" data-theme-id="0" data-slug-hash="oYVoVb" data-default-tab="result" data-user="nopity" data-embed-version="2" data-pen-title="4-square canvas" class="codepen">See the Pen <a href="http://codepen.io/nopity/pen/oYVoVb/">4-square canvas</a> by oscar (<a href="http://codepen.io/nopity">@nopity</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+
+**2.Creating a SVG image**
+
+Replicate the exact same steps but using SVG tags to render the image. Use alternate text to support older browsers.
+
+<span class="label label-warning">Answer:</span> <br>
+
+<p data-height="376" data-theme-id="0" data-slug-hash="QGoajZ" data-default-tab="result" data-user="nopity" data-embed-version="2" data-pen-title="4-square svg" class="codepen">See the Pen <a href="http://codepen.io/nopity/pen/QGoajZ/">4-square svg</a> by oscar (<a href="http://codepen.io/nopity">@nopity</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
