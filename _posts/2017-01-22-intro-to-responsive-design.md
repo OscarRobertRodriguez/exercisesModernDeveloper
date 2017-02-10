@@ -6,42 +6,12 @@ categories: jekyll update
 
 ## **Exercises 1**
 
-**1. Viewport**<br>
-The task is to define two viewports using meta tags with the following specifications:<br>
+**1. Rearranging CSS into Blocks**<br>
 
-Set the width of the viewport to 90% of the screen width and the initial zoom to 2:1. Disable any zooming capability of this page.<br>
-Set the height of the viewport to the device height. Set a minimum zoom of 1:1 and maximum zoom of 5.
 
-<span class="label label-warning">Answer:</span><br>
 
-```html
-<!-- first meta -->
-<meta name="viewport" content="width:90%, initial-scale=2, maximum-scale=1">
 
-<!-- second meta  -->
-<meta name="viewport" content="height=device-height, minimum-scale=1, maximum-scale=5">
-```
-<br>
 
-**2.CSS @media rules**<br>
-Define a CSS media property that targets the following outputs simultaneously: tv and screen. Define the following rules for it:<br>
-
-Set the font type to Arial and set it to size 16pt. Set a 2 pixel dotted green border and padding to 10px. Use the appropriate box-sizing property to accommodate the padding in the overall width and height.
-
-<span class="label label-warning">Answer:</span> <br>
-
-```css 
-@media screen, tv {
-    body {
-        font-family: Arial; 
-        font-size: 16pt; 
-        border: 2px dotted green;
-        box-sizing:border-box;
-    }
-}
-```
-
-<br>
 <br>
 
 ## **Exercises 2**
