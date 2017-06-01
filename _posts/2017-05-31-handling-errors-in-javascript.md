@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "strict mode"
+title:  "Handling Errors in Javascript"
 categories: jekyll update
 ---
 
