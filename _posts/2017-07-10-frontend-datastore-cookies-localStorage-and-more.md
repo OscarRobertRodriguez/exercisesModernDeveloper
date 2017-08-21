@@ -131,7 +131,7 @@ Create a Cookie notification that only displays if the visitor does not have a c
 
 ## **Exercises 3** <br>
 
-[Completed friendsList for all exercises](https://oscarrobertrodriguez.github.io/friendsList/)
+### [Completed friendsList for all exercise 3](https://oscarrobertrodriguez.github.io/friendsList/)
 
 **1.Create a new database that contains a single object store called friends**<br>
 
@@ -173,20 +173,21 @@ Create a Cookie notification that only displays if the visitor does not have a c
     }
   }
 ```
+
 **3.Build a page that displays all of the friends in a list.**<br>
 
 <span class="label label-warning">Answer:</span><br>
 
- look above
+### [Completed friendsList for all exercise 3](https://oscarrobertrodriguez.github.io/friendsList/)
 
 **4.Add a feature to the page that allows friends to be deleted.**<br>
 
 <span class="label label-warning">Answer:</span><br>
  
- look above
+### [Completed friendsList for all exercise 3](https://oscarrobertrodriguez.github.io/friendsList/)
 
 **5.Add a feature to the page that allows existing friends to be edited.**<br>
 
 <span class="label label-warning">Answer:</span><br>
- look above
+### [Completed friendsList for all exercise 3](https://oscarrobertrodriguez.github.io/friendsList/)
 
